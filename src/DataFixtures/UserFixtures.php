@@ -47,12 +47,12 @@ class UserFixtures extends Fixture implements ContainerAwareInterface
 
         $roleUser = $em->getRepository(Role::class)->findOneByName('ROLE_USER');
         $roleAdmin = $em->getRepository(Role::class)->findOneByName('ROLE_ADMIN');
-        $roleAccounts = $em->getRepository(Role::class)->findOneByName('ROLE_ACCOUNTS');
+        $roleStudent = $em->getRepository(Role::class)->findOneByName('ROLE_STUDENT');
 
 
         $userUser = $this->createUser('user', 'user', $roleUser);
         $userAdmin = $this->createUser('admin', 'admin', $roleAdmin);
-        $user3 = $this->createUser('accounts', 'accounts', $roleAccounts);
+        $user3 = $this->createUser('student', 'student', $roleStudent);
 
         $manager->persist($userUser);
         $manager->persist($userAdmin);

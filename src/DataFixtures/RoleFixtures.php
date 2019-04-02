@@ -20,7 +20,7 @@ class RoleFixtures extends Fixture
 
 
         $role3 = new Role();
-        $role3->setName('ROLE_ACCOUNTS');
+        $role3->setName('ROLE_STUDENT');
         $manager->persist($role3);
 
         $manager->flush();

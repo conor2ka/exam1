@@ -10,8 +10,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 class AccountsController extends AbstractController
 {
     /**
-     * @Route("/accounts", name="accounts")
-     * @IsGranted("ROLE_ACCOUNTS")
+     * @Route("/timetable", name="accounts")
+     * @IsGranted("ROLE_STUDENT")
      */
     public function index()
     {
