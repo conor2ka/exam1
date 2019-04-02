@@ -16,7 +16,6 @@ class FoodType extends AbstractType
             ->add('lentil')
             ->add('pea')
             ->add('sunflower')
-            ->add('category')
             ->add('category',EntityType::class,[
                 // list objects from this class
                 'class'=>'App:Category',
